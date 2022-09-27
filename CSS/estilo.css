@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: "PathwayGothicOne-Regular";
+}
+img{
+    width: 10%;
+    padding: 5px;
+    margin: auto;
+}
+h1, h2, h3{
+    color: beige;
+    font-family: "Kurale-Regular";
+    text-align: center;
+    padding: 20px;
+}
+.section_1{
+    border:rgba(167, 125, 206, 0.849) 5px double;
+    border-radius: 50px;
+    padding: 1px;
+    width: 600px;
+    height: 90px;
+    margin: 50px auto;
+}
+.section_2{
+    padding: 1px;
+    margin: 50px;
+}
+.section_3{
+    padding: 0.2px;
+    margin: 50px;
+}
+@font-face {
+    font-family: "PathwayGothicOne-Regular";
+    src: url(../assets/Fonts/PathwayGothicOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Kurale-Regular", sans-serif;
+    src: url(../assets/Fonts/Kurale-Regular.ttf);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    text-decoration: underline beige;
+}
+h3{
+    font-size: 1rem;
+}
+#arriba{
+    text-align: center;
+}
+.Logo{
+    width: 100px;
+    border-radius: 50px;
+}
+nav{
+    text-align: center;
+}
+.Menu{
+    list-style: none;
+    background-color: beige;
+    padding: 0;
+    width: 90%;
+    margin: 20px auto;
+}
+.Menu .item{
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+}
+.Menu .Submenu{
+    position: absolute;
+    display: none;
+}
+.Menu .Submenu .sub_i{
+    display: block;
+    font-size: 1rem;
+    padding: auto;
+}
+.Menu .item a{
+    color: rgba(167, 125, 206, 0.849);
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 20px;
+}
+.Menu .item a:hover{
+    color: rgb(234, 137, 154);
+}
+.Menu .item:hover .Submenu{
+    display: block;
+    color: rgb(234, 137, 154);
+}
+.Menu .item:hover a{
+    display: block;
+    background-color: black;
+}
+main .imag{
+    width: 220px;
+    height: 200px;
+    padding: 2px;
+    border: 1px solid beige;
+}
+main .imag:hover{
+    transform: scale(1.05 , 1.05)
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat (4, 2fr);
+    justify-items: center;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: beige;
+    width: auto;
+    height: auto;
+}
+footer .contact{
+    width: 30px;
+    padding: 5px;
+    margin-top: 30px;
+}
+main .img-fluid{
+    width: 200px;
+    height: 150px;
+    padding: 2px;
+    margin: 20px;
+    border: 2px solid beige;
+}
+main .img-fluid:hover{
+    transform: scale(1.05 , 1.05)
+}
+@media  screen and (max-width: 768px) {
+.Logo{
+        width: 80px;
+        border-radius: 40px;
+}
+img{
+        width: 5%;
+        padding: 2px;
+        margin: auto;
+}
+.section_1{
+    border:rgba(167, 125, 206, 0.849) 4.5px double;
+    padding: 1px;
+    width: 350px;
+    height: 80px;
+    margin: 50px auto;
+}
+.section_2{
+    padding: 0.5px;
+    margin: 50px;
+}
+.section_3{
+    padding: 0.2px;
+    margin: 50px;
+}
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 1.4rem;
+    text-decoration: underline beige;
+}
+h3{
+    font-size: 0.8rem;
+}
+main .imag{
+    width: 180px;
+    height: 150px;
+    border: 2px double beige;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat (3, 3fr);
+    justify-items: center;
+}
+}
+@media screen and (max-width: 420px) {
+
+.Menu .item a{
+        padding: 10px;
+    }
+.Logo{
+    width: 50px;
+    border-radius: 40px;
+}
+img{
+    width: 5%;
+    padding: 2px;
+    margin: auto;
+}
+.section_1{
+border: rgba(167, 125, 206, 0.849) 3.5px double ;
+padding: 0.5px;
+width: 250px;
+height: 60px;
+margin: 30px auto;
+}
+.section_2{
+padding: 0.2px;
+margin: 30px;
+}
+.section_3{
+padding: 0.2px;
+margin: 50px;
+}
+h1{
+font-size: 1rem;
+}
+h2{
+font-size: 0.8rem;
+text-decoration: underline beige;
+}
+h3{
+font-size: 0.5rem;
+}
+footer .contact{
+width: 30px;
+padding: 1px;
+margin-top: 30px;
+margin-bottom: 45px;
+}
+main .imag{
+width: 150px;
+height:100px;
+border: 2px double beige;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat (2, 2fr);
+    justify-items: center;
+}
+}
